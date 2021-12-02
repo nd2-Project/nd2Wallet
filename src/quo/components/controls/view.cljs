@@ -49,9 +49,9 @@
                      :hold       hold
                      :disabled   disabled}]]]))))
 
-(defn switch-view [{:keys [transition hold disabled]}]
+(defn switch-view [{:keys [transition hold disabled accessibility-label]}]
   [animated/view {:style               (styles/switch-style transition disabled)
-                  :accessibility-label :switch
+                  :accessibility-label (or accessibility-label :switch)
                   :accessibility-role  :switch}
    [animated/view {:style (styles/switch-bullet-style transition hold)}]])
 
