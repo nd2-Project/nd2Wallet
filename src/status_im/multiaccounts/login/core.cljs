@@ -325,6 +325,15 @@
               (logging/set-log-level (:log-level multiaccount))
               (notifications-center/get-activity-center-notifications-count))))
 
+(re-frame/reg-fx
+ ::open-last-chat
+ (fn []
+   (async-storage/get-item
+    :chat-id
+    (fn [chat-id]
+      (when chat-id
+        #(re-frame/dispatch [:chat.ui/navigate-to-chat chat-id]))))))
+
 (fx/defn get-chats-callback
   {:events [::get-chats-callback]}
   [{:keys [db] :as cofx}]
@@ -339,7 +348,8 @@
                        ::initialize-wallet
                        (fn [accounts custom-tokens favourites]
                          (re-frame/dispatch [::initialize-wallet
-                                             accounts custom-tokens favourites]))}
+                                             accounts custom-tokens favourites]))
+                       ::open-last-chat nil}
                 notifications-enabled?
                 (assoc ::notifications/enable nil))
               (transport/start-messenger)
@@ -363,13 +373,6 @@
         keychain/auth-method-biometric
         keychain/auth-method-password))))
 
-(defn check-chat-id []
-  (async-storage/get-item
-   :chat-id
-   (fn [chat-id]
-     (when chat-id
-       (re-frame/dispatch [:chat.ui/navigate-to-chat chat-id])))))
-
 (defn redirect-to-root
   "Decides which root should be initialised depending on user and app state"
   [db]
@@ -388,8 +391,7 @@
            config/metrics-enabled?)
       (navigation/navigate-to :anon-metrics-opt-in {})
 
-      :else  (do (re-frame/dispatch [:init-root :chat-stack])
-                 (check-chat-id)))))
+      :else  (re-frame/dispatch [:init-root :chat-stack]))))
 
 (fx/defn login-only-events
   [{:keys [db] :as cofx} key-uid password save-password?]
