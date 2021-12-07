@@ -332,7 +332,7 @@
     :chat-id
     (fn [chat-id]
       (when chat-id
-        #(re-frame/dispatch [:chat.ui/navigate-to-chat chat-id]))))))
+        (re-frame/dispatch [:chat.ui/navigate-to-chat chat-id]))))))
 
 (fx/defn get-chats-callback
   {:events [::get-chats-callback]}
