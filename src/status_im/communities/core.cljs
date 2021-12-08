@@ -11,6 +11,7 @@
    [status-im.bottom-sheet.core :as bottom-sheet]
    [status-im.utils.universal-links.core :as universal-links]
    [status-im.ethereum.json-rpc :as json-rpc]
+   [quo.design-system.colors :as colors]
    [status-im.navigation :as navigation]
    [status-im.utils.handlers :refer [>evt]]
    [status-im.ui.components.emoji-thumbnail.styles :as emoji-thumbnail-styles]
@@ -221,10 +222,17 @@
   {:events [::create-confirmation-pressed]}
   [{:keys [db]}]
   (let [{:keys [name description membership image]} (get db :communities/create)]
-    ;; If access is ENS only, we set the access to require approval and set the rule
+        ;; If access is ENS only, we set the access to require approval and set the rule
     ;; of ens only
-    (let [params ((assoc :membership constants/community-on-request-access
-                         :ens-only true))]
+    (let [params {:name name
+                  :description description
+                  :membership constants/community-on-request-access
+                  :color (rand-nth colors/chat-colors)
+                  :image (string/replace-first (str image) #"file://" "")
+                  :imageAx 0
+                  :imageAy 0
+                  :imageBx crop-size
+                  :imageBy crop-size}]
 
       {::json-rpc/call [{:method     "wakuext_createCommunity"
                          :params     [params]
