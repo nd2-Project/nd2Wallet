@@ -199,8 +199,9 @@
               {::async-storage/set! {:chat-id (get-in cofx [:db :current-chat-id])}
                :db (assoc db :screens/was-focused-once? true)}
 
-              (not (get db :screens/was-focused-once?))
-              {}
+              (and (not (get db :screens/was-focused-once?))
+                   (not= :login view-id))
+              {:db (assoc db :screens/was-focused-once? true)}
 
               :else
               {::async-storage/set! {:chat-id nil}
