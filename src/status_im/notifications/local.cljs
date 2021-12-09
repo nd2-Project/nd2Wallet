@@ -1,5 +1,6 @@
 (ns status-im.notifications.local
-  (:require [status-im.utils.fx :as fx]
+  (:require [status-im.async-storage.core :as async-storage]
+            [status-im.utils.fx :as fx]
             [status-im.ethereum.decode :as decode]
             ["@react-native-community/push-notification-ios" :default pn-ios]
             [status-im.notifications.android :as pn-android]
@@ -39,9 +40,8 @@
   (pn-android/present-local-notification notification))
 
 (defn handle-notification-press [{{deep-link :deepLink} :userInfo
-                                  interaction           :userInteraction
-                                  :as data}]
-  (js/alert (str "foo" (prn-str data)))
+                                  interaction           :userInteraction}]
+  (async-storage/set-item! (str :chat-id) nil)
   (when (and deep-link
              (or platform/ios?
                  (and platform/android? interaction)))
