@@ -327,12 +327,16 @@
 
 (re-frame/reg-fx
  ::open-last-chat
- (fn []
+ (fn [key-uid]
    (async-storage/get-item
     :chat-id
     (fn [chat-id]
       (when chat-id
-        (re-frame/dispatch [:chat.ui/navigate-to-chat chat-id]))))))
+        (async-storage/get-item
+         :key-uid
+         (fn [stored-key-uid]
+           (when (= stored-key-uid key-uid)
+             (re-frame/dispatch [:chat.ui/navigate-to-chat chat-id])))))))))
 
 (fx/defn get-chats-callback
   {:events [::get-chats-callback]}
@@ -349,7 +353,7 @@
                        (fn [accounts custom-tokens favourites]
                          (re-frame/dispatch [::initialize-wallet
                                              accounts custom-tokens favourites]))
-                       ::open-last-chat nil}
+                       ::open-last-chat (get-in db [:multiaccount :key-uid])}
                 notifications-enabled?
                 (assoc ::notifications/enable nil))
               (transport/start-messenger)

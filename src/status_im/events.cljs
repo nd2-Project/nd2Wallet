@@ -196,14 +196,19 @@
   (fx/merge cofx
             (cond
               (= :chat view-id)
-              {::async-storage/set! {:chat-id (get-in cofx [:db :current-chat-id])}
+              {::async-storage/set! {:chat-id (get-in cofx [:db :current-chat-id])
+                                     :key-uid (get-in cofx [:db :multiaccount :key-uid])}
                :db (assoc db :screens/was-focused-once? true)}
+
+              (= :login view-id)
+              {}
 
               (not (get db :screens/was-focused-once?))
               {:db (assoc db :screens/was-focused-once? true)}
 
               :else
-              {::async-storage/set! {:chat-id nil}
+              {::async-storage/set! {:chat-id nil
+                                     :key-uid nil}
                :db (assoc db :screens/was-focused-once? true)})
             #(case view-id
                :keycard-settings (keycard/settings-screen-did-load %)
