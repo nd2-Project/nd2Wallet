@@ -1036,7 +1036,7 @@ class TestProfileMultipleDevice(MultipleDeviceTestCase):
         profile_1.mail_server_button.click()
         profile_1.use_history_node_button.click()
         profile_1.home_button.click(desired_view='chat')
-        if not public_chat_1.chat_element_by_text(message).is_element_displayed(30):
+        if not public_chat_1.chat_element_by_text(message).is_element_displayed(60):
             self.errors.append('History was not fetched after enabling use_history_node')
         self.errors.verify_no_errors()
 
