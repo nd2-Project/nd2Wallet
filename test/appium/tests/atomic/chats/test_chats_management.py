@@ -1019,7 +1019,7 @@ class TestChatManagementMultipleDevice(MultipleDeviceTestCase):
         public_1.chat_message_input.send_keys('@')
         if (chat_1.search_user_in_mention_suggestion_list(ens_nickname_value).is_element_displayed() or
                 chat_1.search_user_in_mention_suggestion_list(sender['username']).is_element_displayed()):
-            self.errors.append('Blcoked user is available in mention suggestion list')
+            self.errors.append('Blocked user is available in mention suggestion list')
 
         self.errors.verify_no_errors()
 
