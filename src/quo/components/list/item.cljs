@@ -173,13 +173,20 @@
                             accessory-style)}
      [rn/view {:style (:tiny spacing/padding-horizontal)}
       (case accessory
-        :radio    [controls/radio {:value active :disabled disabled}]
+        :radio    [controls/radio
+                   {:value               active
+                    :disabled            disabled
+                    :accessibility-label (str "radio-" (if active "on" "off"))}]
         :checkbox [(if animated-accessory?
                      controls/animated-checkbox
                      controls/checkbox)
-                   {:value active :disabled disabled}]
-        :switch   [controls/switch {:value active :disabled disabled
-                                    :accessibility-label (str "switch-" (if active "on" "off"))}]
+                   {:value               active
+                    :disabled            disabled
+                    :accessibility-label (str "checkbox-" (if active "on" "off"))}]
+        :switch   [controls/switch
+                   {:value               active
+                    :disabled            disabled
+                    :accessibility-label (str "switch-" (if active "on" "off"))}]
         :text     [text/text {:color           :secondary
                               :ellipsize-mode  :middle
                               :number-of-lines 1}

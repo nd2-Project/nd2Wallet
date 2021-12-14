@@ -96,7 +96,7 @@
        [:multiaccounts.ui/switch-transactions-management-enabled (not transactions-management-enabled?)])
      :accessory               :switch
      :active                  transactions-management-enabled?}
-    {:size                   :small
+    {:size                    :small
      :title                   "Webview debug"
      :accessibility-label     :webview-debug-switch
      :container-margin-bottom 8

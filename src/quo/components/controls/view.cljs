@@ -11,7 +11,7 @@
 
 (defn control-builder [component]
   (fn [props]
-    (let [{:keys [value onChange disabled]}
+    (let [{:keys [value onChange disabled accessibilityLabel]}
           (bean/bean props)
           state       (animated/use-value 0)
           tap-state   (animated/use-value (:undetermined gh/states))
@@ -45,9 +45,10 @@
                                       {:shouldCancelWhenOutside true
                                        :enabled                 (boolean (and onChange (not disabled)))})
         [animated/view
-         [component {:transition transition
-                     :hold       hold
-                     :disabled   disabled}]]]))))
+         [component {:transition          transition
+                     :hold                hold
+                     :disabled            disabled
+                     :accessibility-label accessibilityLabel}]]]))))
 
 (defn switch-view [{:keys [transition hold disabled accessibility-label]}]
   [animated/view {:style               (styles/switch-style transition disabled)
@@ -55,19 +56,19 @@
                   :accessibility-role  :switch}
    [animated/view {:style (styles/switch-bullet-style transition hold)}]])
 
-(defn radio-view [{:keys [transition hold disabled]}]
+(defn radio-view [{:keys [transition hold disabled accessibility-label]}]
   [animated/view {:style (styles/radio-style transition disabled)
-                  :accessibility-label :radio
+                  :accessibility-label (or accessibility-label :radio)
                   :accessibility-role  :radio}
    [animated/view {:style (styles/radio-bullet-style transition hold)}]])
 
 (defn checkbox-view [props]
-  (let [{:keys [value onChange disabled]} (bean/bean props)]
+  (let [{:keys [value onChange disabled accessibilityLabel]} (bean/bean props)]
     (reagent/as-element
      [rn/touchable-without-feedback
       {:on-press (when (and onChange (not disabled)) onChange)}
       [rn/view {:style               (styles/checkbox-style value disabled)
-                :accessibility-label :checkbox
+                :accessibility-label (or accessibilityLabel :checkbox)
                 :accessibility-role  :checkbox}
        [rn/view {:style (styles/check-icon-style value)}
         [icons/tiny-icon :tiny-icons/tiny-check {:color colors/white}]]]])))
