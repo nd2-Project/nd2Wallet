@@ -26,6 +26,7 @@
    :testnet     {:id 3 :name "Ropsten"}
    :rinkeby     {:id 4 :name "Rinkeby"}
    :xdai        {:id 100 :name "xDai"}
+   :nd2        {:id 27435 :name "nd2 Alpha"}
    :goerli      {:id 5 :name "Goerli"}
    :bsc         {:id   BSC-mainnet-chain-id
                  :name "BSC"}
@@ -56,6 +57,7 @@
 
 (defn sidechain? [id]
   (contains? #{(chain-keyword->chain-id :xdai)
+               (chain-keyword->chain-id :nd2)
                (chain-keyword->chain-id :bsc)} id))
 
 (defn network-with-upstream-rpc? [network]

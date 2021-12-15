@@ -116,7 +116,14 @@
     :config              {:NetworkId      (ethereum/chain-keyword->chain-id :bsc)
                           :DataDir        "/ethereum/bsc_rpc"
                           :UpstreamConfig {:Enabled true
-                                           :URL     "https://bsc-dataseed.binance.org"}}}])
+                                           :URL     "https://bsc-dataseed.binance.org"}}}
+   {:id                  "nd2_rpc",
+    :chain-explorer-link "https://explorer.nd2.io/address/",
+    :name                "nd2 Alpha Network",
+    :config              {:NetworkId      (ethereum/chain-keyword->chain-id :nd2)
+                          :DataDir        "/ethereum/nd2_rpc"
+                          :UpstreamConfig {:Enabled true
+                                           :URL     "https://rpc.nd2.io"}}}])
 
 (def testnet-networks
   [{:id                  "testnet_rpc",

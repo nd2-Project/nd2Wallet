@@ -33,6 +33,10 @@
                   :symbol-display  :xDAI
                   :symbol-exchange :DAI
                   :decimals        18}
+    :nd2        {:name            "nd2 Alpha"
+                  :symbol          :ETH
+                  :symbol-display  :ND2
+                  :decimals        18}
     :bsc         {:name           "BSC"
                   :symbol         :ETH
                   :symbol-display :BNB
@@ -832,6 +836,13 @@
                     :symbol   :BUFF
                     :decimals 18
                     :address  "0x3e50bf6703fc132a94e4baff068db2055655f11b"}])
+
+   :nd2
+   (resolve-icons :nd2
+                  [{:name     "Peso COP EquiX"
+                    :symbol   :COPx
+                    :decimals 18
+                    :address  "0x180d1a3e6ccf636fb52e9ad9161fb75b9e77f5cd"}])
 
    :custom []})
 
