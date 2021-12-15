@@ -103,7 +103,14 @@
                                            :URL     mainnet-rpc-url}}}])
 
 (def sidechain-networks
-  [{:id                  "xdai_rpc",
+  [{:id                  "nd2_rpc",
+    :chain-explorer-link "https://explorer.nd2.io/address/",
+    :name                "nd2 Alpha Network",
+    :config              {:NetworkId      (ethereum/chain-keyword->chain-id :nd2)
+                          :DataDir        "/ethereum/nd2_rpc"
+                          :UpstreamConfig {:Enabled true
+                                           :URL     "https://rpc.nd2.io"}}}
+    {:id                  "xdai_rpc",
     :name                "xDai Chain",
     :chain-explorer-link "https://blockscout.com/xdai/mainnet/address/",
     :config              {:NetworkId      (ethereum/chain-keyword->chain-id :xdai)
@@ -116,14 +123,7 @@
     :config              {:NetworkId      (ethereum/chain-keyword->chain-id :bsc)
                           :DataDir        "/ethereum/bsc_rpc"
                           :UpstreamConfig {:Enabled true
-                                           :URL     "https://bsc-dataseed.binance.org"}}}
-   {:id                  "nd2_rpc",
-    :chain-explorer-link "https://explorer.nd2.io/address/",
-    :name                "nd2 Alpha Network",
-    :config              {:NetworkId      (ethereum/chain-keyword->chain-id :nd2)
-                          :DataDir        "/ethereum/nd2_rpc"
-                          :UpstreamConfig {:Enabled true
-                                           :URL     "https://rpc.nd2.io"}}}])
+                                           :URL     "https://bsc-dataseed.binance.org"}}}])
 
 (def testnet-networks
   [{:id                  "testnet_rpc",

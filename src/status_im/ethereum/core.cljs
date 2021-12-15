@@ -26,7 +26,7 @@
    :testnet     {:id 3 :name "Ropsten"}
    :rinkeby     {:id 4 :name "Rinkeby"}
    :xdai        {:id 100 :name "xDai"}
-   :nd2        {:id 27435 :name "nd2 Alpha"}
+   :nd2         {:id 27435 :name "nd2 Alpha"}
    :goerli      {:id 5 :name "Goerli"}
    :bsc         {:id   BSC-mainnet-chain-id
                  :name "BSC"}

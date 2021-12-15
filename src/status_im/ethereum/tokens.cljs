@@ -33,7 +33,7 @@
                   :symbol-display  :xDAI
                   :symbol-exchange :DAI
                   :decimals        18}
-    :nd2        {:name            "nd2 Alpha"
+    :nd2         {:name            "nd2 Alpha Coin"
                   :symbol          :ETH
                   :symbol-display  :ND2
                   :decimals        18}

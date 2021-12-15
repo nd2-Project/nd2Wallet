@@ -73,11 +73,11 @@
 
 (defn list-header [empty?]
   [react/view
-   [react/touchable-highlight {:on-press #(re-frame/dispatch [:browser.ui/open-url "https://dap.ps"])}
+   [react/touchable-highlight {:on-press #(re-frame/dispatch [:browser.ui/open-url "https://nd2.io/dapps"])}
     [react/view (styles/dapp-store-container)
      [dapp-image nil dapp-image-data]
      [react/text {:style styles/open-dapp-store} (i18n/label :t/open-dapp-store)]
-     [react/text {:style {:color colors/blue :font-size 13 :line-height 22}} "https://dap.ps ->"]]]
+     [react/text {:style {:color colors/blue :font-size 13 :line-height 22}} "https://nd2.io/dapps ->"]]]
    (when-not empty?
      [react/view {:margin-top 14 :margin-left 16 :margin-bottom 4}
       [react/text {:style {:line-height 22 :font-size 15 :color colors/gray}}
