@@ -53,7 +53,7 @@
       [react/view {:pointerEvents :none
                    :style         {:position        :absolute :top 0 :left 0 :right 0 :bottom 0
                                    :justify-content :center :align-items :center}}
-       [react/image {:source      (resources/get-image :status-logo)
+       [react/image {:source      (resources/get-image :nd2-logo)
                      :resize-mode :center
                      :style       (merge {:width  64
                                           :height 64}

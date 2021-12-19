@@ -34,15 +34,9 @@
     (into {} (for [[_ entries] (:RAW (types/json->clj resp))]
                {:ND2 (into {} (for [[to entry] entries]
                                 {to {:from     "ND2"
-                                     :to       "USD"
-                                     :price    0.15
-                                     :last-day 0.15}}))}))
-    (into {} (for [[_ entries] (:RAW (types/json->clj resp))]
-               {:ETH (into {} (for [[to entry] entries]
-                                {to {:from     "ETH"
                                      :to       (name to)
-                                     :price    (:PRICE entry)
-                                     :last-day (:OPEN24HOUR entry)}}))}))))
+                                     :price    0.25
+                                     :last-day 0.25}}))}))))
 
 (defn get-prices [from to mainnet? on-success on-error]
   (http/get

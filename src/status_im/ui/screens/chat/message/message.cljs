@@ -267,7 +267,7 @@
         [react/view {:width 62
                      :padding-left 14}
          (if (= community-id constants/status-community-id)
-           [react/image {:source (resources/get-image :status-logo)
+           [react/image {:source (resources/get-image :nd2-logo)
                          :style {:width 40
                                  :height 40}}]
            [communities.icon/community-icon community])]

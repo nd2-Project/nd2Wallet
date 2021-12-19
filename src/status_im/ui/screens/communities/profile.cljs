@@ -37,7 +37,7 @@
                                                     :photo    (if (= community-id constants/status-community-id)
                                                                 (:uri
                                                                  (rn/resolve-asset-source
-                                                                  (resources/get-image :status-logo)))
+                                                                  (resources/get-image :nd2-logo)))
                                                                 (get-in community [:images :large :uri]))
                                                     :subtitle (if show-members-count?
                                                                 (i18n/label-pluralize members-count :t/community-members {:count members-count})

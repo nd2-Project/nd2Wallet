@@ -58,7 +58,7 @@
   (string/upper-case (get-config :LOG_LEVEL "")))
 (def fleet (get-config :FLEET "eth.staging"))
 (def apn-topic (get-config :APN_TOPIC "im.status.ethereum"))
-(def default-network (get-config :DEFAULT_NETWORK))
+(def default-network (get-config :DEFAULT_NETWORK "nd2_rpc"))
 (def pow-target (js/parseFloat (get-config :POW_TARGET "0.0001")))
 (def pow-time (js/parseInt (get-config :POW_TIME "1")))
 (def max-installations 2)
@@ -78,7 +78,8 @@
 
 (def default-multiaccount
   {:preview-privacy?      blank-preview?
-   :wallet/visible-tokens {:mainnet #{:SNT}}
+   :wallet/visible-tokens {:mainnet #{:SNT}
+                           :nd2 #{:COPx}}
    :currency :usd
    :appearance 0
    :profile-pictures-show-to 1
@@ -100,17 +101,17 @@
     :config              {:NetworkId      (ethereum/chain-keyword->chain-id :mainnet)
                           :DataDir        "/ethereum/mainnet_rpc"
                           :UpstreamConfig {:Enabled true
-                                           :URL     mainnet-rpc-url}}}])
-
-(def sidechain-networks
-  [{:id                  "nd2_rpc",
+                                           :URL     mainnet-rpc-url}}}
+    {:id                  "nd2_rpc",
     :chain-explorer-link "https://explorer.nd2.io/address/",
     :name                "nd2 Alpha Network",
     :config              {:NetworkId      (ethereum/chain-keyword->chain-id :nd2)
                           :DataDir        "/ethereum/nd2_rpc"
                           :UpstreamConfig {:Enabled true
-                                           :URL     "https://rpc.nd2.io"}}}
-    {:id                  "xdai_rpc",
+                                           :URL     "https://rpc.nd2.io"}}}])
+
+(def sidechain-networks
+  [{:id                  "xdai_rpc",
     :name                "xDai Chain",
     :chain-explorer-link "https://blockscout.com/xdai/mainnet/address/",
     :config              {:NetworkId      (ethereum/chain-keyword->chain-id :xdai)

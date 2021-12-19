@@ -38,7 +38,7 @@
      [rn/view {:padding-right 10}
       (cond
         (= id constants/status-community-id)
-        [rn/image {:source (resources/get-image :status-logo)
+        [rn/image {:source (resources/get-image :nd2-logo)
                    :style  {:width  40
                             :height 40}}]
         (seq thumbnail-image)
@@ -107,7 +107,7 @@
        :chevron  true
        :icon     (cond
                    (= id constants/status-community-id)
-                   [rn/image {:source (resources/get-image :status-logo)
+                   [rn/image {:source (resources/get-image :nd2-logo)
                               :style  {:width  40
                                        :height 40}}]
                    (seq thumbnail-image)

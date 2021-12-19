@@ -47,7 +47,7 @@
     [react/scroll-view
      [react/view {:style (merge {:align-items :center}
                                 (:x-large spacing/padding-horizontal))}
-      [react/image {:source (resources/get-image :status-logo)
+      [react/image {:source (resources/get-image :nd2-logo)
                     :style  {:margin-vertical (:base spacing/spacing)
                              :width           32
                              :height          32}}]
