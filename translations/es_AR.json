@@ -231,7 +231,7 @@
     "confirm-password-placeholder": "Confirmá tu contraseña...",
     "confirmation-request": "Solicitud de confirmación",
     "confirmations": "Confirmaciones",
-    "confirmations-helper-text": "Cuando la transacción tenga 12 confirmaciones, puede considerarla resuelta.",
+    "confirmations-helper-text": "Cuando la transacción tenga 2 confirmaciones, puede considerarla resuelta.",
     "connect": "Conectar",
     "connect-mailserver-content": "¿Conectar con {{name}}?",
     "connect-wallet": "Conectar billetera",

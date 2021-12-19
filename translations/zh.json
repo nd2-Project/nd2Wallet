@@ -1468,7 +1468,7 @@
     "transaction": "交易",
     "transaction-data": "交易数据",
     "transaction-declined": "交易被拒绝",
-    "transaction-description": "网络上达到12个确认将被认为交易完成。",
+    "transaction-description": "网络上达到2个确认将被认为交易完成。",
     "transaction-details": "交易明细",
     "transaction-failed": "交易失败",
     "transaction-history": "交易记录",

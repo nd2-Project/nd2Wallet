@@ -141,7 +141,7 @@
     "more": "更多",
     "cancel": "取消",
     "can-not-add-yourself": "不能添加自己",
-    "transaction-description": "請等待達到至少12個確認，來確保交易已被安全地處理。",
+    "transaction-description": "請等待達到至少2個確認，來確保交易已被安全地處理。",
     "add-to-contacts": "添加到聯繫人",
     "available": "可用",
     "You": "你",

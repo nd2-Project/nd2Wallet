@@ -844,7 +844,7 @@
     "token-details": "代币详细信息",
     "topic-name-error": "仅使用小写字母（a到z），数字和短划线（ - ）。不要使用聊天码",
     "transaction": "交易",
-    "transaction-description": "请等待达到至少12个确认，来确保交易已被安全地处理。",
+    "transaction-description": "请等待达到至少2个确认，来确保交易已被安全地处理。",
     "transaction-details": "交易明细",
     "transaction-failed": "交易失败",
     "transaction-history": "交易记录",

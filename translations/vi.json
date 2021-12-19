@@ -1173,7 +1173,7 @@
     "transaction": "Giao dịch",
     "transaction-data": "Dữ liệu giao dịch",
     "transaction-declined": "Giao dịch bị từ chối",
-    "transaction-description": "Coi như nó hoàn tất sau 12 lần xác nhận trên mạng.",
+    "transaction-description": "Coi như nó hoàn tất sau 2 lần xác nhận trên mạng.",
     "transaction-details": "Chi tiết giao dịch",
     "transaction-failed": "giao dịch không thành công",
     "transaction-history": "Lịch sử giao dịch",

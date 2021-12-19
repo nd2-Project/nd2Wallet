@@ -12,7 +12,7 @@
             [status-im.wallet.core :as wallet]
             [taoensso.timbre :as log]))
 
-(def confirmations-count-threshold 12)
+(def confirmations-count-threshold 2)
 
 (def etherscan-supported?
   #{(ethereum/chain-keyword->chain-id :mainnet)

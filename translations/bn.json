@@ -270,7 +270,7 @@
     "confirm-password-placeholder": "আপনার পাসওয়ার্ড নিশ্চিত করুন...",
     "confirmation-request": "নিশ্চিতকরণ অনুরোধ",
     "confirmations": "নিশ্চিতকরণ",
-    "confirmations-helper-text": "যখন লেনদেনের 12 টি নিশ্চয়তা থাকে আপনি এটিকে নিষ্পত্তি হিসাবে বিবেচনা করতে পারেন।",
+    "confirmations-helper-text": "যখন লেনদেনের 2 টি নিশ্চয়তা থাকে আপনি এটিকে নিষ্পত্তি হিসাবে বিবেচনা করতে পারেন।",
     "connect": "সংযোগ করুন",
     "connect-mailserver-content": "{{name}}-এ সংযোগ করুন?",
     "connect-wallet": "ওয়ালেট সংযোগ করুন",

@@ -1356,7 +1356,7 @@
     "transaction": "Transaksyon",
     "transaction-data": "Data ng transaksyon",
     "transaction-declined": "Hindi tinanggap ang transaksyon",
-    "transaction-description": "Isaalang-alang itong kumpleto pagkatapos ng 12 kumpirmasyon sa network.",
+    "transaction-description": "Isaalang-alang itong kumpleto pagkatapos ng 2 kumpirmasyon sa network.",
     "transaction-details": "Mga detalye ng transaksyon",
     "transaction-failed": "Nabigo ang transaksyon",
     "transaction-history": "Kasaysayan ng Transaksyon",

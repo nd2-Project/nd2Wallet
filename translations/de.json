@@ -241,7 +241,7 @@
     "confirm-password-placeholder": "Bestätige Dein Kennwort...",
     "confirmation-request": "Bestätigungsanfrage",
     "confirmations": "Bestätigungen",
-    "confirmations-helper-text": "Wenn die Transaktion 12 Bestätigungen hat, können Sie sie als abgeschlossen betrachten.",
+    "confirmations-helper-text": "Wenn die Transaktion 2 Bestätigungen hat, können Sie sie als abgeschlossen betrachten.",
     "connect": "Verbinden",
     "connect-mailserver-content": "Mit {{name}} verbinden?",
     "connect-wallet": "Brieftasche verbinden",

@@ -1459,7 +1459,7 @@
     "transaction": "işlem",
     "transaction-data": "Işlem verileri",
     "transaction-declined": "İşlem reddedildi",
-    "transaction-description": "Ağdaki 12 onaydan sonra tamamlanmış olarak düşünün.",
+    "transaction-description": "Ağdaki 2 onaydan sonra tamamlanmış olarak düşünün.",
     "transaction-details": "Ödeme detayları",
     "transaction-failed": "İşlem başarısız oldu.",
     "transaction-history": "İşlem geçmişi",

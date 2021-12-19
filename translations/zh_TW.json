@@ -1471,7 +1471,7 @@
     "transaction": "交易",
     "transaction-data": "交易明細",
     "transaction-declined": "交易被拒絕",
-    "transaction-description": "將在網路上經過12次確認後完成",
+    "transaction-description": "將在網路上經過2次確認後完成",
     "transaction-details": "交易明細",
     "transaction-failed": "交易失敗",
     "transaction-history": "交易記錄",
