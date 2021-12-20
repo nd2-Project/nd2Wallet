@@ -623,7 +623,7 @@
     "ethereum-address": "Адрес Ethereum",
     "ethereum-node-started-incorrectly-description": "Нода Ethereum была запущена с неверной конфигурацией, приложение будет остановлено для восстановления после этого состояния. Сконфигурированный идентификатор сети = {{network-id}}, фактический = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Нода Ethereum была запущена неправильно",
-    "etherscan-lookup": "Посмотреть на Etherscan",
+    "etherscan-lookup": "Посмотреть на nd2Explorer",
     "everyone": "Все",
     "export-account": "Экспортировать аккаунт",
     "export-key": "Экспортировать приватный ключ",

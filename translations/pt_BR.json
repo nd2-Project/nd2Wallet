@@ -638,7 +638,7 @@
     "ethereum-address": "Endereço Ethereum",
     "ethereum-node-started-incorrectly-description": "O nó Ethereum foi iniciado com a configuração incorreta. O aplicativo será interrompido para se recuperar dessa condição. ID de rede configurado = {{network-id}}, real = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Nó Ethereum iniciado incorretamente",
-    "etherscan-lookup": "Procurar no Etherscan",
+    "etherscan-lookup": "Procurar no nd2Explorer",
     "everyone": "Todos",
     "expand-all": "Expandir todos",
     "export-account": "Exportar conta",

@@ -513,7 +513,7 @@
     "ethereum-address": "Địa chỉ Ethereum",
     "ethereum-node-started-incorrectly-description": "Nút Ethereum đã được khởi động với cấu hình không chính xác, ứng dụng sẽ bị dừng để khôi phục từ tình trạng đó. Id mạng đã định cấu hình = {{network-id}} , thực tế = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Nút Ethereum bắt đầu không chính xác",
-    "etherscan-lookup": "Tra cứu trên Etherscan",
+    "etherscan-lookup": "Tra cứu trên nd2Explorer",
     "export-account": "Xuất tài khoản",
     "external-storage-denied": "Quyền truy cập vào bộ nhớ ngoài bị từ chối",
     "failed": "Thất bại",

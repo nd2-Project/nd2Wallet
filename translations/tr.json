@@ -629,7 +629,7 @@
     "ethereum-address": "Ethereum adresi",
     "ethereum-node-started-incorrectly-description": "Ethereum düğümü yanlış yapılandırmayla başlatıld ve bu durumu düzeltmek için uygulama durdurulur. Yapılandırılmış ağ kimliği = {{network-id}} , gerçek = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Ethereum düğümü yanlış başladı",
-    "etherscan-lookup": "Etherscan'a bak.",
+    "etherscan-lookup": "nd2Explorer'a bak.",
     "everyone": "Herkes",
     "expand-all": "Tümünü genişlet",
     "export-account": "Hesabı dışa aktar",

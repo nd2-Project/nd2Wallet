@@ -623,7 +623,7 @@
     "ethereum-address": "Alamat Ethereum",
     "ethereum-node-started-incorrectly-description": "Ethereum node dimulakan dengan konfigurasi yang salah, aplikasi akan dihentikan untuk pulih dari keadaan itu. Id rangkaian yang dikonfigurasi = {{network-id}} , sebenar = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Node Ethereum bermula dengan tidak betul",
-    "etherscan-lookup": "Cari Etherscan",
+    "etherscan-lookup": "Cari nd2Explorer",
     "everyone": "Semua orang",
     "expand-all": "Kembang semua",
     "export-account": "Eksport akaun",

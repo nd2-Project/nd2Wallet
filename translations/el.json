@@ -530,7 +530,7 @@
     "ethereum-address": "Διεύθυνση Ethereum",
     "ethereum-node-started-incorrectly-description": "Ο κόμβος Ethereum ξεκίνησε με εσφαλμένη ρύθμιση παραμέτρων, η εφαρμογή θα διακοπεί για ανάκτηση από αυτήν την κατάσταση. Ρυθμισμένο αναγνωριστικό δικτύου = {{network-id}}, πραγματικό = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Ο κόμβος Ethereum ξεκίνησε εσφαλμένα",
-    "etherscan-lookup": "Κοιτάξτε στο Ethercan",
+    "etherscan-lookup": "Κοιτάξτε στο nd2Explorer",
     "export-account": "Εξαγωγή λογαριασμού",
     "external-storage-denied": "Δεν επιτρέπεται η πρόσβαση σε εξωτερικό χώρο αποθήκευσης",
     "failed": "Απέτυχε",

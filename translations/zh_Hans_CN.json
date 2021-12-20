@@ -388,7 +388,7 @@
     "eth": "ETH",
     "ethereum-node-started-incorrectly-description": "以太网节点启动配置不正确，应用程序将停止从该条件恢复。已配置的网络ID = {{network-id}} ，实际网络ID = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "以太坊节点启动不正确",
-    "etherscan-lookup": "在Etherscan上查看",
+    "etherscan-lookup": "在nd2Explorer上查看",
     "export-account": "导出帐户",
     "failed": "失败",
     "faq": "常见问题",

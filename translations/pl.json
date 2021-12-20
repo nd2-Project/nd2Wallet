@@ -621,7 +621,7 @@
     "ethereum-address": "Adres Ethereum",
     "ethereum-node-started-incorrectly-description": "Węzeł Ethereum został uruchomiony z nieprawidłową konfiguracją, aplikacja zostanie zatrzymana w celu przywrócenia stanu pierwotnego. Skonfigurowany identyfikator sieci = {{network-id}}, rzeczywisty = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Węzeł Ethereum został uruchomiony nieprawidłowo",
-    "etherscan-lookup": "Wyszukaj na Etherscan",
+    "etherscan-lookup": "Wyszukaj na nd2Explorer",
     "everyone": "Wszystkich",
     "export-account": "Eksportuj konto",
     "export-key": "Eksportuj klucz prywatny",

@@ -590,7 +590,7 @@
     "ethereum-address": "Ethereum-Adresse",
     "ethereum-node-started-incorrectly-description": "Der Ethereum-Knoten wurde mit einer falschen Konfiguration gestartet. Die Anwendung wird gestoppt, um diesen Zustand wiederherzustellen. Konfigurierte Netzwerk-ID = {{network-id}} , jetzt = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Der Ethereum-Knoten wurde falsch gestartet",
-    "etherscan-lookup": "Schauen Sie bei Etherscan nach",
+    "etherscan-lookup": "Schauen Sie bei nd2Explorer nach",
     "everyone": "Jedem",
     "export-account": "Konto exportieren",
     "export-key": "Schlüssel exportieren",

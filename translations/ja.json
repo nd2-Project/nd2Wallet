@@ -627,7 +627,7 @@
     "ethereum-address": "イーサリアムアドレス",
     "ethereum-node-started-incorrectly-description": "イーサリアムノードが誤った設定で起動されたため、アプリケーションを停止しています。ネットワークIDは{{network-id}}に設定されていますが、正しくは{{fetched-network-id}}です。",
     "ethereum-node-started-incorrectly-title": "イーサリアムノードが正しく起動できませんでした",
-    "etherscan-lookup": "Etherscanで調べる",
+    "etherscan-lookup": "nd2Explorerで調べる",
     "everyone": "全員",
     "expand-all": "すべて展開",
     "export-account": "アカウントをエクスポート",

@@ -612,7 +612,7 @@
     "ethereum-address": "Address ng Ethereum",
     "ethereum-node-started-incorrectly-description": "Ang Ethereum node ay sinimulan ng maling pagsasaayos, titigil ang aplikasyon upang mabawi mula sa kondisyong iyon. Na-configure ang network id ={{network-id}}, aktwal ={{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Ang Ethereum node ay nagsimula nang hindi wasto",
-    "etherscan-lookup": "Tumingin sa Etherscan",
+    "etherscan-lookup": "Tumingin sa nd2Explorer",
     "everyone": "Lahat",
     "export-account": "I-export ang account",
     "export-key": "I-export ang pribadong key",

@@ -637,7 +637,7 @@
     "ethereum-address": "ইথেরিয়াম ঠকানা",
     "ethereum-node-started-incorrectly-description": "ভুল কনফিগারেশন দিয়ে Ethereum নোড শুরু করা হয়েছে, সেই অবস্থা থেকে পুনরুদ্ধার করতে প্রয়োগণ বন্ধ করা হবে। কনফিগার করা নেটওয়ার্ক id = {{network-id}} actual = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Ethereum নোডটি ভুলভাবে শুরু হয়েছে",
-    "etherscan-lookup": "Etherscan এর দিকে তাকান",
+    "etherscan-lookup": "nd2Explorer এর দিকে তাকান",
     "everyone": "প্রত্যেকে",
     "expand-all": "সব প্রসারিত করুন",
     "export-account": "একাউন্ট রপ্তানি করুন",

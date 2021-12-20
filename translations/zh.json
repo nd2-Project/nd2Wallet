@@ -629,7 +629,7 @@
     "ethereum-address": "以太坊地址",
     "ethereum-node-started-incorrectly-description": "以太坊节点启动配置不正确，应用程序将停止从该条件恢复。已配置的网络ID = {{network-id}} ，实际网络ID = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "以太坊节点启动不正确",
-    "etherscan-lookup": "在Etherscan上查找",
+    "etherscan-lookup": "在nd2Explorer上查找",
     "everyone": "所有人",
     "expand-all": "展开全部",
     "export-account": "导出帐户",

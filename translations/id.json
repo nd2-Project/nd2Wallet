@@ -555,7 +555,7 @@
     "ethereum-address": "Alamat Ethereum",
     "ethereum-node-started-incorrectly-description": "Node Ethereum dimulai dengan konfigurasi yang salah, aplikasi akan dihentikan untuk memulihkan dari kondisi itu. Id jaringan yang dikonfigurasikan = {{network-id}} , aktual = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Node Ethereum mulai salah",
-    "etherscan-lookup": "Lihatlah Etherscan",
+    "etherscan-lookup": "Lihatlah nd2Explorer",
     "expand-all": "Perluas semua",
     "export-account": "Akun ekspor",
     "external-storage-denied": "Akses ke penyimpanan eksternal ditolak",

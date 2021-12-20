@@ -632,7 +632,7 @@
     "ethereum-address": "Ethereum-adres",
     "ethereum-node-started-incorrectly-description": "Ethereum-node werd gestart met onjuiste configuratie, applicatie zal worden gestopt om daarvan te herstellen. Geconfigureerd netwerk id = {{network-id}}, daadwerkelijk = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Ethereum-node onjuist gestart",
-    "etherscan-lookup": "Kijk op Etherscan",
+    "etherscan-lookup": "Kijk op nd2Explorer",
     "everyone": "Iedereen",
     "expand-all": "Alles uitvouwen",
     "export-account": "Account exporteren",

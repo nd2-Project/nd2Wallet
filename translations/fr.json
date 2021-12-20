@@ -640,7 +640,7 @@
     "ethereum-address": "Adresse Ethereum",
     "ethereum-node-started-incorrectly-description": "Le nœud Ethereum a été démarré avec une configuration incorrecte, l'application sera arrêtée pour récupérer de cette condition. Identifiant réseau configuré = {{network-id}} , actuel = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "Le noeud Ethereum a mal démarré",
-    "etherscan-lookup": "Regarder sur Etherscan",
+    "etherscan-lookup": "Regarder sur nd2Explorer",
     "everyone": "Tous",
     "expand-all": "Développer tout",
     "export-account": "Exporter le compte",

@@ -685,7 +685,7 @@
     "ethereum-address": "عنوان الإيثريوم",
     "ethereum-node-started-incorrectly-description": "تم بدء عقدة إيثيريوم بتكوين غير صحيح ، وسيتم إيقاف التطبيق للتعافي من هذا الشرط. معرف {{network-id}} = network id ، الفعلي = {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "بدأت عقدة Ethereum بشكل غير صحيح",
-    "etherscan-lookup": "إبحث في Etherscan ",
+    "etherscan-lookup": "إبحث في nd2Explorer ",
     "everyone": "الجميع",
     "expand-all": "توسيع الكل",
     "export-account": "حساب التصدير",

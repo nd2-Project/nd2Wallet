@@ -629,7 +629,7 @@
     "ethereum-address": "以太坊地址",
     "ethereum-node-started-incorrectly-description": "乙太坊節點以錯誤的配置啟動，應用程式即將停止。\n已配置的網路ID = {{network-id}} ，實際= {{fetched-network-id}}",
     "ethereum-node-started-incorrectly-title": "乙太坊節點啟動錯誤",
-    "etherscan-lookup": "至Etherscan上查詢",
+    "etherscan-lookup": "至nd2Explorer上查詢",
     "everyone": "所有人",
     "expand-all": "展開全部",
     "export-account": "匯出帳號",
