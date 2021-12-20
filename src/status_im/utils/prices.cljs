@@ -32,11 +32,11 @@
                                        :price    (:PRICE entry)
                                        :last-day (:OPEN24HOUR entry)}}))})))
     (into {} (for [[_ entries] (:RAW (types/json->clj resp))]
-               {:ND2 (into {} (for [[to entry] entries]
-                                {to {:from     "ND2"
+               {:ETH (into {} (for [[to entry] entries]
+                                {to {:from     "ETH"
                                      :to       (name to)
-                                     :price    0.25
-                                     :last-day 0.25}}))}))))
+                                     :price    (:PRICE entry)
+                                     :last-day (:OPEN24HOUR entry)}}))}))))
 
 (defn get-prices [from to mainnet? on-success on-error]
   (http/get
