@@ -40,7 +40,7 @@
       [react/view {:style {:flex-direction :row}}
        (if prices-loading?
          [react/small-loading-indicator :colors/white-persist]
-         [react/text {:style {:font-size 32 :color colors/white-persist :font-weight "600"}} portfolio-value])
+         [react/text {:style {:font-size 32 :color colors/white-persist :font-weight "600"}} (i18n/format-currency portfolio-value (:code currency))])
        [react/text {:style {:font-size 32 :color colors/white-transparent-persist :font-weight "600"}} (str " " (:code currency))]]
       [quo/text {:number-of-lines 1
                  :ellipsize-mode  :middle

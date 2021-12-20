@@ -1498,5 +1498,12 @@
     "your-keys": "Tus claves",
     "your-recovery-phrase": "Tu frase semilla",
     "your-recovery-phrase-description": "Esta es tu frase semilla. La usas para comprobar que esta es tu billetera. ¡Sólo la verás una vez! Escríbela en un papel y guárdala en un lugar seguro. La necesitarás si pierdes o reinstalas tu billetera.",
-    "youre-on-mobile-network": "Estás en una red móvil"
+    "youre-on-mobile-network": "Estás en una red móvil",
+    "status-automatic": "Automático",
+    "status-automatic-subtitle": "Configura tu estado automáticamente",
+    "status-dnd": "No molestar",
+    "status-dnd-subtitle": "Silencia todas tus notificaciones",
+    "status-always-online": "Siempre Online",
+    "status-inactive": "Desconectado",
+    "status-inactive-subtitle": "Oculta tu estado Online"
 }

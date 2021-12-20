@@ -16,7 +16,7 @@
             [status-im.utils.types :as types]
             [taoensso.timbre :as log]))
 
-(def report-email "error-reports@status.im")
+(def report-email "error-reports@nd2.io")
 (def max-log-entries 1000)
 (def logs-queue (atom #queue[]))
 (defn add-log-entry [entry]
@@ -234,7 +234,7 @@
  (fn [url]
    (.openURL ^js react/linking url)))
 
-(def gh-issue-url "https://github.com/status-im/status-react/issues/new?labels=bug&title=%s&body=%s")
+(def gh-issue-url "https://github.com/nd2-project/nd2Wallet/issues/new?labels=bug&title=%s&body=%s")
 
 (fx/defn submit-issue
   [{:keys [db]}]
