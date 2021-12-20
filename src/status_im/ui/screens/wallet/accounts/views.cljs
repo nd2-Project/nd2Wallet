@@ -68,7 +68,7 @@
    {:title               [quo/text {:weight :medium}
                           [quo/text {:weight :inherit}
                            (str (if amount
-                                  (wallet.utils/format-amount amount decimals)
+                                  (i18n/format-currency (wallet.utils/format-amount amount decimals))
                                   "...")
                                 " ")]
                           [quo/text {:color  :secondary
@@ -181,7 +181,7 @@
        [quo/text {:animated? true
                   :weight    :semi-bold
                   :style     (styles/value-text {:minimized minimized})}
-        portfolio-value
+        (i18n/format-currency portfolio-value)
         [quo/text {:animated? true
                    :size      :inherit
                    :weight    :inherit
