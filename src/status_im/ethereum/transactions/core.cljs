@@ -21,6 +21,7 @@
 
 (def binance-mainnet-chain-id (ethereum/chain-keyword->chain-id :bsc))
 (def binance-testnet-chain-id (ethereum/chain-keyword->chain-id :bsc-testnet))
+(def nd2-alpha-chain-id (ethereum/chain-keyword->chain-id :nd2))
 
 (def network->subdomain {3 "ropsten"
                          4 "rinkeby"})
@@ -38,7 +39,10 @@
     (str "https://bscscan.com/tx/" hash)
 
     (= chain-id binance-testnet-chain-id)
-    (str "https://testnet.bscscan.com/tx/" hash)))
+    (str "https://testnet.bscscan.com/tx/" hash)
+
+    (= chain-id nd2-alpha-chain-id)
+    (str "https://explorer.nd2.io/tx/" hash)))
 
 (def default-erc20-token
   {:symbol   :ERC20
