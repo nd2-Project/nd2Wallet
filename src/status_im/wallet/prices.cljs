@@ -51,7 +51,7 @@
       :or   {currency :usd}} :multiaccount :as db} :db}]
   (let [chain    (ethereum/chain-keyword db)
         mainnet? (= :nd2 chain)
-        assets   (get visible-tokens chain #{})
+        assets   (get visible-tokens chain #{:COPx})
         tokens   (tokens-symbols assets all-tokens)
         currency (get currency/currencies currency)]
     (when (not= network-status :offline)

@@ -95,20 +95,20 @@
   (get-in default-multiaccount [:wallet/visible-tokens chain]))
 
 (def mainnet-networks
-  [{:id                  "mainnet_rpc",
-    :chain-explorer-link "https://etherscan.io/address/",
-    :name                "Mainnet with upstream RPC",
-    :config              {:NetworkId      (ethereum/chain-keyword->chain-id :mainnet)
-                          :DataDir        "/ethereum/mainnet_rpc"
-                          :UpstreamConfig {:Enabled true
-                                           :URL     mainnet-rpc-url}}}
-    {:id                  "nd2_rpc",
+  [{:id                  "nd2_rpc",
     :chain-explorer-link "https://explorer.nd2.io/address/",
     :name                "nd2 Alpha Network",
     :config              {:NetworkId      (ethereum/chain-keyword->chain-id :nd2)
                           :DataDir        "/ethereum/nd2_rpc"
                           :UpstreamConfig {:Enabled true
-                                           :URL     "https://rpc.nd2.io"}}}])
+                                           :URL     "https://rpc.nd2.io"}}}
+    {:id                  "mainnet_rpc",
+    :chain-explorer-link "https://etherscan.io/address/",
+    :name                "Mainnet with upstream RPC",
+    :config              {:NetworkId      (ethereum/chain-keyword->chain-id :mainnet)
+                          :DataDir        "/ethereum/mainnet_rpc"
+                          :UpstreamConfig {:Enabled true
+                                           :URL     mainnet-rpc-url}}}])
 
 (def sidechain-networks
   [{:id                  "xdai_rpc",
