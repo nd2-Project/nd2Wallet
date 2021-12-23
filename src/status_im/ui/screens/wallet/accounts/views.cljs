@@ -181,7 +181,7 @@
        [quo/text {:animated? true
                   :weight    :semi-bold
                   :style     (styles/value-text {:minimized minimized})}
-        (i18n/format-currency portfolio-value)
+        (i18n/label-number portfolio-value)
         [quo/text {:animated? true
                    :size      :inherit
                    :weight    :inherit

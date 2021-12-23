@@ -11,8 +11,8 @@
 ;; Example usage:
 ;; (get-prices "ETH" "USD" println print)
 
-(def api-url "https://min-api.cryptocompare.com/data")
-(def status-identifier "extraParams=Status.im")
+(def api-url "http://api.nd2.io:3000/data")
+(def status-identifier "extraParams=nd2Wallet-alpha")
 
 (defn- ->url-param-syms [syms]
   ((comp (partial string/join ",") (partial map name)) syms))
@@ -20,10 +20,10 @@
 (defn- gen-price-url [fsyms tsyms]
   (str api-url "/pricemultifull?fsyms=" (->url-param-syms fsyms) "&tsyms=" (->url-param-syms tsyms) "&" status-identifier))
 
-(defn- format-price-resp [resp mainnet?]
+(defn- format-price-resp [resp nd2?]
   ;;NOTE(this check is to allow value conversion for sidechains with native currencies listed on cryptocompare
   ;; under a symbol different than display symbol. Specific use case xDAI.
-  (if mainnet?
+  (if nd2?
     (when-let [RAW (:RAW (types/json->clj resp))]
       (into {} (for [[from entries] RAW]
                  {from (into {} (for [[to entry] entries]
@@ -32,14 +32,14 @@
                                        :price    (:PRICE entry)
                                        :last-day (:OPEN24HOUR entry)}}))})))
     (into {} (for [[_ entries] (:RAW (types/json->clj resp))]
-               {:ETH (into {} (for [[to entry] entries]
-                                {to {:from     "ETH"
+               {:ND2 (into {} (for [[to entry] entries]
+                                {to {:from     "ND2"
                                      :to       (name to)
                                      :price    (:PRICE entry)
                                      :last-day (:OPEN24HOUR entry)}}))}))))
 
-(defn get-prices [from to mainnet? on-success on-error]
+(defn get-prices [from to nd2? on-success on-error]
   (http/get
    (gen-price-url from to)
-   (fn [resp] (on-success (format-price-resp resp mainnet?)))
+   (fn [resp] (on-success (format-price-resp resp nd2?)))
    on-error))

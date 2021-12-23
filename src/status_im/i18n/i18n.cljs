@@ -26,7 +26,7 @@
     (if delimiter?
       {:delimiter (subs n 1 2)
        :separator (subs n 5 6)}
-      {:delimiter ""
+      {:delimiter ","
        :separator (subs n 4 5)})))
 
 (defn label-number [number]
@@ -34,7 +34,7 @@
     (let [{:keys [delimiter separator]} delimeters]
       (.toNumber i18n
                  (string/replace number #"," ".")
-                 (clj->js {:precision                 10
+                 (clj->js {:precision                 6
                            :strip_insignificant_zeros true
                            :delimiter                 delimiter
                            :separator                 separator})))))

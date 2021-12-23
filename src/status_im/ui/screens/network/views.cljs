@@ -26,7 +26,7 @@
                         :key   :connected}])]])
 
 (def mainnet?
-  #{"mainnet" "mainnet_rpc"})
+  #{"nd2" "nd2_rpc"})
 
 (defn render-network [{:keys [id name] :as network} _ _ current-network]
   (let [connected? (= id current-network)]

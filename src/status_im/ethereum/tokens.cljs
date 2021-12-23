@@ -8,7 +8,7 @@
   (memoize
    (fn [symbol]
      {:name           "Native"
-      :symbol         :ETH
+      :symbol         :ND2
       :symbol-display symbol
       :decimals       18
       :icon           {:source (js/require "../resources/images/tokens/default-token.png")}})))
@@ -17,9 +17,9 @@
 
 (def all-native-currencies
   (ethereum.macros/resolve-native-currency-icons
-   {:mainnet     {:name     "Ether"
-                  :symbol   :ETH
-                  :decimals 18}
+   {:mainnet     {:name           "Ether"
+                  :symbol         :ETH
+                  :decimals       18}
     :testnet     {:name           "Ropsten Ether"
                   :symbol         :ETH
                   :symbol-display :ETHro
@@ -137,10 +137,10 @@
                     :name     "BTU Protocol"
                     :address  "0xb683D83a532e2Cb7DFa5275eED3698436371cc9f"
                     :decimals 18}
-                   {:symbol               :DGD
-                    :name                 "Digix DAO"
-                    :address              "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a"
-                    :decimals             9
+                   {:symbol   :DGD
+                    :name     "Digix DAO"
+                    :address  "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a"
+                    :decimals 9
                     :skip-decimals-check? true}
                    {:symbol   :AE
                     :name     "Aeternity"

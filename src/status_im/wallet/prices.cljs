@@ -50,7 +50,7 @@
      {:keys [currency :wallet/visible-tokens]
       :or   {currency :usd}} :multiaccount :as db} :db}]
   (let [chain    (ethereum/chain-keyword db)
-        mainnet? (= :mainnet chain)
+        mainnet? (= :nd2 chain)
         assets   (get visible-tokens chain #{})
         tokens   (tokens-symbols assets all-tokens)
         currency (get currency/currencies currency)]
