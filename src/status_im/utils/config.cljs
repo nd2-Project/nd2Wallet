@@ -80,7 +80,7 @@
   {:preview-privacy?      blank-preview?
    :wallet/visible-tokens {:mainnet #{:SNT}
                            :nd2 #{:COPx}}
-   :currency :usd
+   :currency :cop
    :appearance 0
    :profile-pictures-show-to 1
    :profile-pictures-visibility 1
